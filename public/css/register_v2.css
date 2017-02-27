@@ -1,0 +1,80 @@
+@charset "utf-8";
+/***** CSS Document 
+Use for:	register
+Author:		wd
+*/
+
+body { padding: 0; margin: 0; text-align: center; color: #333; font: normal 14px/1.8 "Microsoft YaHei"; background-color: #f0f0f0; }
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, li, input { padding: 0; margin: 0; }
+ul, li { list-style: none; }
+i, em { font-style: normal; }
+img { border: none; -ms-interpolation-mode: bicubic; }
+a { color: #333; text-decoration: none; }
+a:hover { color: #cc0f0e; text-decoration: none; }
+.clear { clear: both; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: block; zoom: 1; }
+.wrapper { width: 1000px; margin: 0 auto; text-align: left; }
+.fl { float: left; }
+.fr { float: right; }
+.pr { position: relative }
+.pa { position: absolute }
+.mt50 { margin-top: 50px; }
+.spr { background-image: url(../img/spr_v2.png); background-repeat: no-repeat; }
+/*header*/
+.header { height: 80px; padding: 30px 0; text-align: center; }
+.logo-hiapk, .logo-apk { display: inline-block; width: 230px; height: 80px; background-repeat: no-repeat; background-position: 50% bottom; }
+.logo-hiapk { border-right: 1px solid #dadada; background-image: url(../images/account/logo-hiapk.png); }
+.logo-apk { background-image: url(../images/account/logo-apk.png); }
+/*main*/
+.main { width: 420px; margin: 0 auto; padding: 30px 40px; border: 1px solid #e2e2e2; background: #fff; }
+/*注册*/
+.i-row { margin-top: 15px; }
+.t-input { float: left; width: 418px; height: 52px; border: 1px #d8d8d8 solid; background-color: #fafafa; text-indent: 10px; font-size: 16px; line-height: 52px; }
+.t-input-1, .t-input-2, .t-input-3, .t-input-4 { background-image: url(../img/spr_v2.png); background-repeat: no-repeat; text-indent: 40px; }
+.t-input-1 { background-position: 10px -154px; }
+.t-input-2 { background-position: 10px -204px; }
+.t-input-3 { background-position: 10px -268px; }
+.t-input-4 { background-position: 10px -101px; }
+.focus { border: 1px #97be74 solid; outline: none; -webkit-box-shadow: 0px 0px 2px 2px rgba(151,190,116,0.5); -moz-box-shadow: 0px 0px 2px 2px rgba(151,190,116,0.5); box-shadow: 0px 0px 2px 2px rgba(151,190,116,0.5); }
+.i-row em { display: inline-block; height: 25px; padding-top: 7px; color: #999; text-indent: 9px; }
+.v-row { margin-top: 30px; }
+.s-t-input { width: 140px; vertical-align: bottom; text-align: center; text-indent: 0; }
+.v-code { width: 120px; height: 42px; margin: 5px 0 0 10px; cursor: pointer; }
+.refreshcode { margin: 0 20px; line-height: 52px; color: #6eb132; }
+.code-right, .code-wrong { width: 20px; height: 52px; background-position: 0 -302px; }
+.code-wrong { background-position: 0 -352px; }
+.i-row em .code-right, .i-row em .code-wrong { width: 25px; height: 25px; background-position: 5px -315px; }
+.i-row em .code-wrong { background-position: 5px -365px; }
+.btn { display: block; height: 55px; border: none; background-color: #6eb132; font-size: 20px; line-height: 55px; color: #fff; cursor: pointer; }
+.btn:hover { color: #fff; background-color: #56951e; }
+.btn-420 { width: 420px; }
+.btn-250 { width: 250px; margin: 0 auto; }
+.b-row { color: #999; }
+.b-row a { color: #6eb132; }
+.b-row a:hover { color: #cc0f0e; }
+/*登录*/
+.a-login { padding: 20px 0; }
+.btn-weibo, .btn-qq { width: 180px; height: 38px; text-indent: 47px; font-size: 16px; line-height: 38px; }
+.btn-weibo { background-position: 0 0; }
+.btn-qq { background-position: 0 -50px; }
+/*登密码修改*/
+.step { height: 73px; margin: 0 0 50px; }
+.step li { float: left; position: relative; width: 25%; height: 70px; border-bottom: 3px solid #d2d2d2; text-align: center; }
+.step li span { line-height: 50px; }
+.step li em { position: absolute; left: 50%; bottom: -11px; display: block; width: 20px; height: 20px; margin-left: -10px; border-radius: 50%; background: #d2d2d2; line-height: 20px; color: #fff; }
+.step .current { border-color: #6eb132; }
+.step .current span { color: #6eb132; }
+.step .current em { background: #6eb132; }
+.step-con { height: 275px; }
+.step-con:before { content: "."; display: block; height: 0; visibility: hidden; }
+.sendmail { margin: 50px 0 40px; text-align: center; line-height: 2.2; }
+.sendmail b { display: block; }
+.modifysuccess, .tipsuccess, .tiperror { margin: 60px 0 0; text-align: center; font-size: 18px; }
+.modifysuccess em, .tipsuccess em, .tiperror em { display: block; width: 85px; height: 85px; margin: 0 auto 15px; background-position: 50% -418px; }
+.tipsuccess, .tiperror { margin: 20px 0 0; }
+.tiperror em { background-position: 50% -518px; }
+/*footer*/
+.footer { padding: 20px 0 10px; text-align: center; }
+.footer, .footer a { font-size: 12px; color: #666; }
+.footer .copy { font-family: Arial; }
