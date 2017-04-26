@@ -2,10 +2,14 @@
 
 namespace DummyNamespace;
 
-use Illuminate\Http\Request;
 use DummyRootNamespaceHttp\Controllers\Controller;
 
 class DummyClass extends Controller
 {
-    //
+    //默认 index
+    public function index()
+    {
+        dd(__FILE__);
+        return $this->view('home.index.index');
+    }
 }

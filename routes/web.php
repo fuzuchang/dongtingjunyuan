@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+//认证路由
 Auth::routes();
 
-Route::get('/welcome', 'HomeController@index');
-Route::get('/article/{id}', 'Article\IndexController@index');
+//包含前台路由文件
+require_once __DIR__ . '/home/web.php';
+
+//包含后台路由文件
+require_once __DIR__ . '/admin/web.php';
+
+//包含用户中心路由文件
+require_once __DIR__ . '/user/web.php';
